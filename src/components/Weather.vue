@@ -43,8 +43,7 @@ export default {
     return {
       WeattherData: [],
       selected: 5,
-      loading: true,
-      key: process.env.VUE_APP_KEY
+      loading: true
     }
   },
   computed: {
@@ -68,7 +67,8 @@ export default {
     }
   },
   created () {
-    const api = 'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=' + this.key
+    const key = 'CWB-EB5D708D-447A-4835-99FF-FF31762FD07D'
+    const api = 'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=' + key
     this.$http.get(api)
       .then(response => {
         this.loading = false
