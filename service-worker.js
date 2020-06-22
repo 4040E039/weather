@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.d664a234f29b87990469372045ba01ef.js"
+  "precache-manifest.2d5952f66fcad4a485d913b4a796e702.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-weather"});
