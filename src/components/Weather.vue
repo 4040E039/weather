@@ -16,7 +16,7 @@
                 <div v-if = "index === selected">
                   <b-row>
                   <b-col md = 7>
-                    <h3>County : {{ County.locationName }}</h3>
+                    <h4>County : {{ County.locationName }}</h4>
                     <h5>Status : {{ weather (index).parameter.parameterName }}</h5>
                     <h5>MinT : {{ County.weatherElement[2].time[0].parameter.parameterName }}°C</h5>
                     <h5>MaxT : {{ County.weatherElement[4].time[0].parameter.parameterName }}°C</h5>
@@ -42,7 +42,7 @@ export default {
   data () {
     return {
       WeattherData: [],
-      selected: 5,
+      selected: 6,
       loading: true,
       key: process.env.VUE_APP_KEY
     }
